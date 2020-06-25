@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CefSharp.Core", "CefSharp.C
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CefSharp.BrowserSubprocess.Core", "CefSharp.BrowserSubprocess.Core\CefSharp.BrowserSubprocess.Core.vcxproj", "{6C4BB501-2F8E-48AC-9AB5-8CFB2D74185C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CefSharp.BrowserSubprocess", "CefSharp.BrowserSubprocess\CefSharp.BrowserSubprocess.csproj", "{23EE5140-2C2C-4B53-A954-10B08DCA6BD6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -41,6 +43,14 @@ Global
 		{6C4BB501-2F8E-48AC-9AB5-8CFB2D74185C}.Release|x64.Build.0 = Release|x64
 		{6C4BB501-2F8E-48AC-9AB5-8CFB2D74185C}.Release|x86.ActiveCfg = Release|Win32
 		{6C4BB501-2F8E-48AC-9AB5-8CFB2D74185C}.Release|x86.Build.0 = Release|Win32
+		{23EE5140-2C2C-4B53-A954-10B08DCA6BD6}.Debug|x64.ActiveCfg = Debug|x64
+		{23EE5140-2C2C-4B53-A954-10B08DCA6BD6}.Debug|x64.Build.0 = Debug|x64
+		{23EE5140-2C2C-4B53-A954-10B08DCA6BD6}.Debug|x86.ActiveCfg = Debug|x86
+		{23EE5140-2C2C-4B53-A954-10B08DCA6BD6}.Debug|x86.Build.0 = Debug|x86
+		{23EE5140-2C2C-4B53-A954-10B08DCA6BD6}.Release|x64.ActiveCfg = Release|x64
+		{23EE5140-2C2C-4B53-A954-10B08DCA6BD6}.Release|x64.Build.0 = Release|x64
+		{23EE5140-2C2C-4B53-A954-10B08DCA6BD6}.Release|x86.ActiveCfg = Release|x86
+		{23EE5140-2C2C-4B53-A954-10B08DCA6BD6}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
