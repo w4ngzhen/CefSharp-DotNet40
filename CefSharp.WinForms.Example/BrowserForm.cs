@@ -392,7 +392,7 @@ namespace CefSharp.WinForms.Example
                     {
                         MessageBox.Show("Unexpected failure of calling CEF->GetZoomLevelAsync: " + previous.Exception.ToString());
                     }
-                }, TaskContinuationOptions.HideScheduler);
+                }, TaskContinuationOptions.None);
             }
         }
 
@@ -566,7 +566,7 @@ namespace CefSharp.WinForms.Example
                 {
                     var requestContext = control.Browser.GetBrowserHost().RequestContext;
 
-                    var dir = Path.Combine(AppContext.BaseDirectory, @"..\..\..\..\CefSharp.Example\Extensions");
+                    var dir = Path.Combine(System.AppDomain.CurrentDomain.BaseDirectory, @"..\..\..\..\CefSharp.Example\Extensions");
                     dir = Path.GetFullPath(dir);
                     if (!Directory.Exists(dir))
                     {
@@ -618,7 +618,7 @@ namespace CefSharp.WinForms.Example
                 {
                     if (args.IsLoading == false)
                     {
-                        Task.Delay(10000).ContinueWith(t =>
+                        ExHelper.TaskHelper.Delay(10000).ContinueWith(t =>
                         {
                             if (control.Browser != null)
                             {

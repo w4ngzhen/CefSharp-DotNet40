@@ -258,7 +258,7 @@ namespace CefSharp.WinForms.Example
                 messageInterceptor = null;
             }
 
-            Task.Run(async () =>
+            ExHelper.TaskHelper.Run(async () =>
             {
                 try
                 {
@@ -319,7 +319,7 @@ namespace CefSharp.WinForms.Example
                         else
                         {
                             // Chrome hasn't yet set up its message-loop window.
-                            await Task.Delay(10);
+                            await ExHelper.TaskHelper.Delay(10);
                         }
                     }
                 }
