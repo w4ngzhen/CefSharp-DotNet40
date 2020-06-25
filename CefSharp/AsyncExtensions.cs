@@ -41,7 +41,7 @@ namespace CefSharp
             }
 
             //There was a problem deleting cookies
-            return Task.FromResult(TaskDeleteCookiesCallback.InvalidNoOfCookiesDeleted);
+            return ExHelper.TaskHelper.FromResult(TaskDeleteCookiesCallback.InvalidNoOfCookiesDeleted);
         }
 
         /// <summary>
@@ -73,7 +73,7 @@ namespace CefSharp
             }
 
             //There was a problem setting cookies
-            return Task.FromResult(false);
+            return ExHelper.TaskHelper.FromResult(false);
         }
 
         /// <summary>
@@ -91,7 +91,7 @@ namespace CefSharp
                 return cookieVisitor.Task;
             }
 
-            return Task.FromResult<List<Cookie>>(null);
+            return ExHelper.TaskHelper.FromResult<List<Cookie>>(null);
         }
 
         /// <summary>
@@ -113,7 +113,7 @@ namespace CefSharp
                 return cookieVisitor.Task;
             }
 
-            return Task.FromResult<List<Cookie>>(null);
+            return ExHelper.TaskHelper.FromResult<List<Cookie>>(null);
         }
 
         /// <summary>
@@ -132,7 +132,7 @@ namespace CefSharp
             }
 
             //returns null if cookies cannot be accessed.
-            return Task.FromResult(false);
+            return ExHelper.TaskHelper.FromResult(false);
         }
 
         /// <summary>

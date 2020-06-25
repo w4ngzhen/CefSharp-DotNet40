@@ -59,7 +59,7 @@ namespace CefSharp.Internals
                                 {
                                     //We use some reflection to get the Result
                                     //If someone has a better way of doing this then please submit a PR
-                                    result.Result = resultType.GetProperty("Result").GetValue(resultTask);
+                                    result.Result = resultType.GetProperty("Result").GetValue(resultTask, null);
                                 }
                                 else
                                 {

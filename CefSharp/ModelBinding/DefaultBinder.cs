@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Reflection;
+using CefSharp.ExHelper;
 
 namespace CefSharp.ModelBinding
 {
@@ -82,13 +83,13 @@ namespace CefSharp.ModelBinding
             Type genericType = null;
 
             // Make sure it has a generic type
-            if (targetType.GetTypeInfo().IsGenericType)
+            if (ReflectionHelper.IsGenericType(targetType))
             {
                 genericType = targetType.GetGenericArguments().FirstOrDefault();
             }
             else
             {
-                var ienumerable = targetType.GetInterfaces().Where(i => i.GetTypeInfo().IsGenericType).FirstOrDefault(i => i.GetGenericTypeDefinition() == typeof(IEnumerable<>));
+                var ienumerable = targetType.GetInterfaces().Where(ReflectionHelper.IsGenericType).FirstOrDefault(i => i.GetGenericTypeDefinition() == typeof(IEnumerable<>));
                 genericType = ienumerable == null ? null : ienumerable.GetGenericArguments().FirstOrDefault();
             }
 

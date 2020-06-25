@@ -10,6 +10,7 @@ using System.Reflection;
 using System.Threading;
 using System.Threading.Tasks;
 using CefSharp.Event;
+using CefSharp.ExHelper;
 
 namespace CefSharp.Internals
 {
@@ -106,7 +107,7 @@ namespace CefSharp.Internals
             if (boundObjectHandler != null || boundObjectsHandler != null)
             {
                 //Execute on Threadpool so we don't unnessicarily block the CEF IO thread
-                Task.Run(() =>
+                TaskHelper.Run(() =>
                 {
                     foreach (var obj in objs)
                     {
