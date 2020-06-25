@@ -2790,7 +2790,7 @@ namespace CefSharp.Wpf
                     resizeHackForIssue2779Size = new Structs.Size(viewRect.Width - 1, viewRect.Height - 1);
                     host.WasResized();
 
-                    await Task.Delay(delayInMs);
+                    await CefSharp.ExHelper.TaskHelper.Delay(delayInMs);
 
                     if (!host.IsDisposed)
                     {

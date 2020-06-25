@@ -90,7 +90,8 @@ namespace CefSharp.Wpf.Rendering
                         {
                             var sourceRect = new Int32Rect(dirtyRect.X, dirtyRect.Y, dirtyRect.Width, dirtyRect.Height);
                             var bitmap = (InteropBitmap)image.Source;
-                            bitmap.Invalidate(sourceRect);
+                            // bitmap.Invalidate(sourceRect);
+                            bitmap.Invalidate();
                         }
                     }
                 }), dispatcherPriority);

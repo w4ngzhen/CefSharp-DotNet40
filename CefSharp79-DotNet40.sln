@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CefSharp.BrowserSubprocess"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CefSharp.WinForms", "CefSharp.WinForms\CefSharp.WinForms.csproj", "{882505AD-246D-402A-8414-347EFB8E2C8D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CefSharp.Wpf", "CefSharp.Wpf\CefSharp.Wpf.csproj", "{E6CB3790-F267-4AC7-892C-2620737682CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -61,6 +63,14 @@ Global
 		{882505AD-246D-402A-8414-347EFB8E2C8D}.Release|x64.Build.0 = Release|x64
 		{882505AD-246D-402A-8414-347EFB8E2C8D}.Release|x86.ActiveCfg = Release|x86
 		{882505AD-246D-402A-8414-347EFB8E2C8D}.Release|x86.Build.0 = Release|x86
+		{E6CB3790-F267-4AC7-892C-2620737682CA}.Debug|x64.ActiveCfg = Debug|x64
+		{E6CB3790-F267-4AC7-892C-2620737682CA}.Debug|x64.Build.0 = Debug|x64
+		{E6CB3790-F267-4AC7-892C-2620737682CA}.Debug|x86.ActiveCfg = Debug|x86
+		{E6CB3790-F267-4AC7-892C-2620737682CA}.Debug|x86.Build.0 = Debug|x86
+		{E6CB3790-F267-4AC7-892C-2620737682CA}.Release|x64.ActiveCfg = Release|x64
+		{E6CB3790-F267-4AC7-892C-2620737682CA}.Release|x64.Build.0 = Release|x64
+		{E6CB3790-F267-4AC7-892C-2620737682CA}.Release|x86.ActiveCfg = Release|x86
+		{E6CB3790-F267-4AC7-892C-2620737682CA}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
