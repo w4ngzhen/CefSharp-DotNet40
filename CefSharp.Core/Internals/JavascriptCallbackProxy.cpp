@@ -60,7 +60,7 @@ namespace CefSharp
                 invalidFrameResponse->Success = false;
                 invalidFrameResponse->Message = "Frame with Id:" + _callback->FrameId + " is no longer valid.";
 
-                Task::FromResult(invalidFrameResponse);
+                ExHelper::TaskHelper::FromResult(invalidFrameResponse);
             }
         }
 

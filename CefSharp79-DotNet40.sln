@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CefSharp", "CefSharp\CefSharp.csproj", "{A55848CC-10E7-40CB-ADDB-04740B16DD43}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CefSharp.Core", "CefSharp.Core\CefSharp.Core.vcxproj", "{7B495581-2271-4F41-9476-ACB86E8C864F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{A55848CC-10E7-40CB-ADDB-04740B16DD43}.Release|x64.Build.0 = Release|x64
 		{A55848CC-10E7-40CB-ADDB-04740B16DD43}.Release|x86.ActiveCfg = Release|x86
 		{A55848CC-10E7-40CB-ADDB-04740B16DD43}.Release|x86.Build.0 = Release|x86
+		{7B495581-2271-4F41-9476-ACB86E8C864F}.Debug|x64.ActiveCfg = Debug|x64
+		{7B495581-2271-4F41-9476-ACB86E8C864F}.Debug|x64.Build.0 = Debug|x64
+		{7B495581-2271-4F41-9476-ACB86E8C864F}.Debug|x86.ActiveCfg = Debug|Win32
+		{7B495581-2271-4F41-9476-ACB86E8C864F}.Debug|x86.Build.0 = Debug|Win32
+		{7B495581-2271-4F41-9476-ACB86E8C864F}.Release|x64.ActiveCfg = Release|x64
+		{7B495581-2271-4F41-9476-ACB86E8C864F}.Release|x64.Build.0 = Release|x64
+		{7B495581-2271-4F41-9476-ACB86E8C864F}.Release|x86.ActiveCfg = Release|Win32
+		{7B495581-2271-4F41-9476-ACB86E8C864F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
