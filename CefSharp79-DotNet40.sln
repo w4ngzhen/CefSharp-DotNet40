@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CefSharp.Wpf", "CefSharp.Wp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CefSharp.Example", "CefSharp.Example\CefSharp.Example.csproj", "{A4394E7B-1155-43A6-989E-8AB72DDDC9E4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CefSharp.WinForms.Example", "CefSharp.WinForms.Example\CefSharp.WinForms.Example.csproj", "{C043FFF7-5F71-4FFC-989A-E09E18548589}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -81,6 +83,14 @@ Global
 		{A4394E7B-1155-43A6-989E-8AB72DDDC9E4}.Release|x64.Build.0 = Release|x64
 		{A4394E7B-1155-43A6-989E-8AB72DDDC9E4}.Release|x86.ActiveCfg = Release|x86
 		{A4394E7B-1155-43A6-989E-8AB72DDDC9E4}.Release|x86.Build.0 = Release|x86
+		{C043FFF7-5F71-4FFC-989A-E09E18548589}.Debug|x64.ActiveCfg = Debug|x64
+		{C043FFF7-5F71-4FFC-989A-E09E18548589}.Debug|x64.Build.0 = Debug|x64
+		{C043FFF7-5F71-4FFC-989A-E09E18548589}.Debug|x86.ActiveCfg = Debug|x86
+		{C043FFF7-5F71-4FFC-989A-E09E18548589}.Debug|x86.Build.0 = Debug|x86
+		{C043FFF7-5F71-4FFC-989A-E09E18548589}.Release|x64.ActiveCfg = Release|x64
+		{C043FFF7-5F71-4FFC-989A-E09E18548589}.Release|x64.Build.0 = Release|x64
+		{C043FFF7-5F71-4FFC-989A-E09E18548589}.Release|x86.ActiveCfg = Release|x86
+		{C043FFF7-5F71-4FFC-989A-E09E18548589}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
