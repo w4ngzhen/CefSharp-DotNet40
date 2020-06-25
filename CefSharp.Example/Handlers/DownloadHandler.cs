@@ -8,9 +8,9 @@ namespace CefSharp.Example.Handlers
 {
     public class DownloadHandler : IDownloadHandler
     {
-        public event EventHandler<DownloadItem> OnBeforeDownloadFired;
+        public event DownEventHandler OnBeforeDownloadFired;
 
-        public event EventHandler<DownloadItem> OnDownloadUpdatedFired;
+        public event DownEventHandler OnDownloadUpdatedFired;
 
         public void OnBeforeDownload(IWebBrowser chromiumWebBrowser, IBrowser browser, DownloadItem downloadItem, IBeforeDownloadCallback callback)
         {
@@ -29,5 +29,7 @@ namespace CefSharp.Example.Handlers
         {
             OnDownloadUpdatedFired?.Invoke(this, downloadItem);
         }
+
+        public delegate void DownEventHandler(object sender, DownloadItem downloadItem);
     }
 }

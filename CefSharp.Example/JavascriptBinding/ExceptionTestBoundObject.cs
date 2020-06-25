@@ -46,9 +46,9 @@ namespace CefSharp.Example.JavascriptBinding
         {
             const int taskDelay = 500;
 
-            Task.Run(async () =>
+            ExHelper.TaskHelper.Run(async () =>
             {
-                await Task.Delay(taskDelay);
+                await ExHelper.TaskHelper.Delay(taskDelay);
 
                 using (errorCallback)
                 {

@@ -38,7 +38,7 @@ namespace CefSharp.Example.Handlers
             //In this instance we'll use a Task, typically you'd invoke a call to the UI Thread and display a Dialog to the user
             //You can cast the IWebBrowser param to ChromiumWebBrowser to easily access
             //control, from there you can invoke onto the UI thread, should be in an async fashion
-            Task.Run(() =>
+            ExHelper.TaskHelper.Run(() =>
             {
                 //NOTE: When executing the callback in an async fashion need to check to see if it's disposed
                 if (!callback.IsDisposed)
@@ -87,7 +87,7 @@ namespace CefSharp.Example.Handlers
             //You can cast the IWebBrowser param to ChromiumWebBrowser to easily access
             //control, from there you can invoke onto the UI thread, should be in an async fashion
             //Load https://httpbin.org/basic-auth/cefsharp/passwd in the browser to test
-            Task.Run(() =>
+            ExHelper.TaskHelper.Run(() =>
             {
                 using (callback)
                 {

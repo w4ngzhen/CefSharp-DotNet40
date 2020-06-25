@@ -163,19 +163,19 @@ namespace CefSharp.Example.JavascriptBinding
 
         public Task<string> ReturnTaskStringAsync()
         {
-            return Task.FromResult(nameof(ReturnTaskStringAsync));
+            return ExHelper.TaskHelper.FromResult(nameof(ReturnTaskStringAsync));
         }
 
         public async void VoidReturnAsync()
         {
-            await Task.Delay(1000);
+            await ExHelper.TaskHelper.Delay(1000);
 
             Debug.WriteLine("Delayed 1 second.");
         }
 
         public async Task<string> AsyncWaitTwoSeconds(string str)
         {
-            await Task.Delay(2000);
+            await ExHelper.TaskHelper.Delay(2000);
 
             return str;
         }
@@ -194,7 +194,7 @@ namespace CefSharp.Example.JavascriptBinding
         [DebuggerHidden]
         public async Task<string> AsyncThrowException()
         {
-            await Task.Delay(2000);
+            await ExHelper.TaskHelper.Delay(2000);
 
             throw new Exception("Expected Exception");
         }

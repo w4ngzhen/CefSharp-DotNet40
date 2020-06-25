@@ -55,7 +55,7 @@ namespace CefSharp.Example.JavascriptBinding
 
         public void TestCallbackWithDateTime(IJavascriptCallback javascriptCallback)
         {
-            Task.Run(async () =>
+            ExHelper.TaskHelper.Run(async () =>
             {
                 using (javascriptCallback)
                 {
@@ -70,7 +70,7 @@ namespace CefSharp.Example.JavascriptBinding
 
         public void TestCallbackWithDateTime1900(IJavascriptCallback javascriptCallback)
         {
-            Task.Run(async () =>
+            ExHelper.TaskHelper.Run(async () =>
             {
                 using (javascriptCallback)
                 {
@@ -85,7 +85,7 @@ namespace CefSharp.Example.JavascriptBinding
 
         public void TestCallbackWithDateTime1970(IJavascriptCallback javascriptCallback)
         {
-            Task.Run(async () =>
+            ExHelper.TaskHelper.Run(async () =>
             {
                 using (javascriptCallback)
                 {
@@ -100,7 +100,7 @@ namespace CefSharp.Example.JavascriptBinding
 
         public void TestCallbackWithDateTime1985(IJavascriptCallback javascriptCallback)
         {
-            Task.Run(async () =>
+            ExHelper.TaskHelper.Run(async () =>
             {
                 using (javascriptCallback)
                 {
@@ -117,9 +117,9 @@ namespace CefSharp.Example.JavascriptBinding
         {
             const int taskDelay = 1500;
 
-            Task.Run(async () =>
+            ExHelper.TaskHelper.Run(async () =>
             {
-                await Task.Delay(taskDelay);
+                await ExHelper.TaskHelper.Delay(taskDelay);
 
                 using (javascriptCallback)
                 {
@@ -149,9 +149,9 @@ namespace CefSharp.Example.JavascriptBinding
 
             const int taskDelay = 1500;
 
-            Task.Run(async () =>
+            ExHelper.TaskHelper.Run(async () =>
             {
-                await Task.Delay(taskDelay);
+                await ExHelper.TaskHelper.Delay(taskDelay);
 
                 if (javascriptCallback != null)
                 {

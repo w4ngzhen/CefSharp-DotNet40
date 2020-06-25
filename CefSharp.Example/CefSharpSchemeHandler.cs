@@ -18,7 +18,7 @@ namespace CefSharp.Example
             var uri = new Uri(request.Url);
             var fileName = uri.AbsolutePath;
 
-            Task.Run(() =>
+            ExHelper.TaskHelper.Run(() =>
             {
                 using (callback)
                 {

@@ -12,7 +12,7 @@ namespace CefSharp.Example
     {
         public override CefReturnValue ProcessRequestAsync(IRequest request, ICallback callback)
         {
-            Task.Run(() =>
+            ExHelper.TaskHelper.Run(() =>
             {
                 using (callback)
                 {
